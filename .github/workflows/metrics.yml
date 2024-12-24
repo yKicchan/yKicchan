@@ -13,7 +13,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics_left.svg
+          filename: metrics.svg
           user: yKicchan
           template: classic
           base: header, activity, repositories
@@ -23,14 +23,6 @@ jobs:
           plugin_languages_details: lines, bytes-size, percentage
           plugin_languages_colors: github
           plugin_languages_limit: 4
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics_right.svg
-          user: yKicchan
-          template: classic
-          base: ""
-          config_timezone: Asia/Tokyo
           plugin_stargazers: yes
           plugin_stargazers_charts_type: classic
           plugin_followup: yes
